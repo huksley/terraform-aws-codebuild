@@ -218,6 +218,16 @@ resource "aws_codebuild_project" "default" {
       "name"  = "${var.codebuild_var3}"
       "value" = "${var.codebuild_var3_val}"
     }
+
+    environment_variable {
+      "name"  = "${var.codebuild_var4}"
+      "value" = "${var.codebuild_var4_val}"
+    }
+
+    environment_variable {
+      "name"  = "${var.codebuild_var5}"
+      "value" = "${var.codebuild_var5_val}"
+    }
   }
 
   source {

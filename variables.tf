@@ -142,6 +142,26 @@ variable "codebuild_var3_val" {
   default     = "value3"
 }
 
+variable "codebuild_var4" {
+  type        = "string"
+  default     = "var4"
+}
+
+variable "codebuild_var4_val" {
+  type        = "string"
+  default     = "value4"
+}
+
+variable "codebuild_var5" {
+  type        = "string"
+  default     = "var5"
+}
+
+variable "codebuild_var5_val" {
+  type        = "string"
+  default     = "value5"
+}
+
 variable "source_type" {
   type        = "string"
   default     = "CODEPIPELINE"
