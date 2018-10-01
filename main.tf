@@ -104,6 +104,8 @@ resource "aws_iam_policy" "default_cache_bucket" {
 }
 
 data "aws_iam_policy_document" "permissions" {
+  count = "${var.enabled == "true" ? 1 : 0}"
+  
   statement {
     sid = ""
 
