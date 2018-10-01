@@ -24,7 +24,7 @@ variable "enabled" {
 
 variable "cache_enabled" {
   type        = "string"
-  default     = "true"
+  default     = "false"
   description = "If cache_enabled is true, create an S3 bucket for storing codebuild cache inside"
 }
 
@@ -36,7 +36,7 @@ variable "cache_expiration_days" {
 
 variable "cache_bucket_suffix_enabled" {
   type        = "string"
-  default     = "true"
+  default     = "false"
   description = "The cache bucket generates a random 13 character string to generate a unique bucket name. If set to false it uses terraform-null-label's id value"
 }
 
